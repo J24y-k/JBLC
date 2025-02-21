@@ -9,12 +9,12 @@
 
 <body>
     <header>
-        <img src="images/WhatsApp Image 2025-01-16 at 17.05.20_f2b49c22.jpg" alt="Church Logo">
+        <img src="images/WhatsApp Image 2025-01-16 at 17.05.20_f2b49c22.jpg alt="Church Logo">
         <nav>
-            <a href="#about">About Us</a>
-            <a href="#events">Events</a>
-            <a href="#sermons">Sermons</a>
-            <a href="#contact">Contacts</a>
+            <a href="#about-us">About Us</a>
+            <a href="events.html">Events</a>
+            <a href="sermons.html">Sermons</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     
@@ -22,50 +22,50 @@
         <h1>Welcome to Jesus The Bread Of Life</h1>
         <p>"Out of my belly shall flow rivers of living waters." - John 7:38</p>
         <div class="cta">
-            <button>Join Us for Worship</button>
-            <button>Watch Live</button>
-            <button>Give Online</button>
+            <button onclick="location.href='#weekly-program'">Join Us for Worship</button>
+            <button onclick="location.href='sermons.html'">Watch Live</button>
+            <button onclick="location.href='giving.html'">Give an Offering</button>
         </div>
     </div>
+    
     <section class="section" id="yeartheme">
-        <title>Theme Of The Year</title>
-        <h2><b><i>2025 - The Year of Divine Wisdom for Maximum Impact</i></b></h2>
-        <p>Proverbs 4 verse 6-7 "Do not turn your back on wisdom,for she will protect you.Love her, and she will guard you. Getting wisdom is the wisest thing you can do! and whatever else you do, develop good judgement."</p>
+        <h2><i>2025 - The Year of Divine Wisdom for Maximum Impact</i></h2>
+        <p>Proverbs 4:6-7 "Do not turn your back on wisdom, for she will protect you..."</p>
     </section>
-
+    
     <section class="section" id="about-us">
         <h3>About Us</h3>
-        <p>Welcome to Jesus The Bread of Life Church, where we believe in Jesus Christ as our Lord and Savior. Our faith is rooted in His love, grace, and power to transform lives.
-
-            Our Vision: Deliverance and restoration of mankind through faith and the power of the Holy Spirit.
-            
-            Our Mission: Winning souls for the Kingdom of God, spreading His word, and bringing hope to all.</p>
+        <p>Welcome to Jesus The Bread of Life Church, where we believe in Jesus Christ as our Lord and Savior...</p>
     </section>
     
     <section class="section" id="events">
-        <title>Upcoming Events</title>
-        <p>17 MAY 2025: YOU DESERVE CELEBRATION <button>learn more</button></p>
-        <p>21 June 2025: YOUTH CONFERENCE <button>learn more</button></p>
-        <p>29th,30th, and 31st August 2025: QUAVAH 2nd EDITION <button>learn more</button></p>
-        <p>31st DECEMBER 2025: CROSSOVER 2025-2026 <button>learn more</button></p>
+        <h3>Upcoming Events</h3>
+        <ul>
+            <li>17 MAY 2025: YOU DESERVE CELEBRATION <button onclick="location.href='events.html'">Learn More</button></li>
+            <li>21 JUNE 2025: YOUTH CONFERENCE <button onclick="location.href='events.html'">Learn More</button></li>
+            <li>29-31 AUGUST 2025: QUAVAH 2nd EDITION <button onclick="location.href='events.html'">Learn More</button></li>
+            <li>31 DECEMBER 2025: CROSSOVER 2025-2026 <button onclick="location.href='events.html'">Learn More</button></li>
+        </ul>
     </section>
     
     <section class="section quick-links">
-        <div><a href="#">Sermons</a></div>
-        <div><a href="#">Events</a></div>
-        <div><a href="#">Giving</a></div>
-        <div><a href="#">Ministries</a></div>
+        <div><a href="sermons.html">Sermons</a></div>
+        <div><a href="events.html">Events</a></div>
+        <div><a href="giving.html">Giving</a></div>
+        <div><a href="ministries.html">Ministries</a></div>
     </section>
     
-    <section class="section">
-        <h2>Testimonies</h2>
-        <div class="testimony">
-            <p>"This church has changed my life. I feel closer to God than ever before."</p>
-            <p>- Member Testimony</p>
+    <section class="section" id="weekly-program">
+        <h2>Weekly Program</h2>
+        <div class="weekly">
+            <div class="program-item"> WEDNESDAY: 05:30 - 07:30 PM | Teaching Service</div>
+            <div class="program-item"> FRIDAY: 05:30 - 07:45 PM | Fasting & Praying</div>
+            <div class="program-item"> SATURDAY: 04:00 - 07:00 PM | Choir Practice</div>
+            <div class="program-item"> SUNDAY: 09:00 AM - 12:45 PM | Sunday Worship</div>
         </div>
     </section>
     
-    <footer>
+    <footer id="contact">
         <div class="footer-links">
             <div>
                 <h3>Contact Us</h3>
@@ -74,11 +74,15 @@
             </div>
             <div>
                 <h3>Follow Us</h3>
-                <p>Social Media Links</p>
+                <p>
+                    <a href="#">Instagram</a> |
+                    <a href="#">Facebook</a> |
+                    <a href="#">YouTube</a> |
+                    <a href="#">WhatsApp</a>
+                </p>
             </div>
         </div>
         <p>&copy; 2025 Jesus The Bread Of Life Church. All Rights Reserved.</p>
     </footer>
-
 </body>
 </html>
