@@ -10,6 +10,18 @@ body {
     min-height: 100vh; 
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
 /* Header and Footer */
 header, footer {
     background-color: #0047AB;
@@ -20,6 +32,7 @@ header, footer {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    
 }
 
 /* Logo Styling */
@@ -59,6 +72,8 @@ nav a:hover {
 /* CTA Buttons */
 .cta {
     margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .cta button {
@@ -257,5 +272,57 @@ footer .footer-links a:hover {
     justify-content: center; 
     gap: 15px; 
     padding: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        width: auto;
+    }
+
+    header img {
+        margin: 0 auto; /* places the logo at the center */
+        height: 60px; 
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pastor-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pastor-info {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 1rem;
+        font-size: 14px;
+        text-align: center;
+        flex-direction: column;
+        height: 20%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
