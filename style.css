@@ -220,6 +220,10 @@ section {
     font-weight: bold;
 }
 
+iframe {
+    border: none;
+}
+
 
 /* Footer Fix */
 footer {
