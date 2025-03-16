@@ -196,6 +196,15 @@ section {
     font-weight: bold;
 }
 
+.past-events img {
+    width: 100%; /* Adjust to match the width of other images */
+    max-width: 400px; /* Set a maximum width if needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images are displayed properly */
+    margin: 10px auto; /* Center images and add spacing */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
 /* Weekly Program */
 #weekly-program {
     background: #002C70;
