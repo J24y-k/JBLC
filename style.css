@@ -39,8 +39,13 @@ header img {
     height: 80px; 
     width: auto;  
     margin-left: 20px;
-}
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #0047AB;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
+}
 /* Navigation */
 nav {
     display: flex;
@@ -327,8 +332,9 @@ footer .footer-links a:hover {
     }
 
     header img {
-        margin: 0 auto; /* places the logo at the center */
+        margin: 0 auto; 
         height: 60px; 
+        width: 60px;
     }
 
     nav {
