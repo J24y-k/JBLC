@@ -21,7 +21,6 @@ html, body {
 }
 
 
-/* Header and Footer */
 header, footer {
     background-color: #0047AB;
     color: #F5F5F5;
@@ -34,7 +33,6 @@ header, footer {
     
 }
 
-/* Logo Styling */
 header img {
     height: 80px; 
     width: auto;  
@@ -46,7 +44,7 @@ header img {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
 }
-/* Navigation */
+
 nav {
     display: flex;
     gap: 15px;
@@ -65,15 +63,49 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: #00000099
-                url('hero-image.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('images/choir.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     color: #F5F5F5;
     text-align: center;
     padding: 2rem 1rem;
-    height: 20rem;
+    height: 34rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* CTA Buttons */
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+}
+
+.hero .cta button {
+    margin: 0 0.5rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    color: #0047AB;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta button:hover {
+    background-color: #0047AB;
+    color: #fff;
+}
+
 .cta {
     margin-top: 1.5rem;
     display: flex;
@@ -97,7 +129,6 @@ nav a:hover {
     color: #F5F5F5;
 }
 
-/* Quick Links */
 .quick-links {
     display: flex;
     justify-content: center;
@@ -116,7 +147,7 @@ nav a:hover {
     color: #D1001F;
 }
 
-/* General Section Styling */
+
 section {
     padding: 2rem;
     margin: 2rem auto;
@@ -127,7 +158,6 @@ section {
     max-width: 900px;
 }
 
-/* Year Theme Styling */
 #yeartheme {
     background: linear-gradient(to right, #0047AB, #002C70);
     color: white;
@@ -149,7 +179,6 @@ section {
     font-style: italic;
 }
 
-/* About Us Styling */
 #about-us h3, #about-us h4 {
     color: #0047AB;
     font-weight: bold;
@@ -161,7 +190,6 @@ section {
     color: #333;
 }
 
-/* Pastor Section */
 .pastor-section {
     display: flex;
     align-items: center;
@@ -184,7 +212,7 @@ section {
     flex: 1;
 }
 
-/* Events Styling */
+
 #events ul {
     list-style: none;
     padding: 0;
@@ -211,13 +239,13 @@ section {
 
 #memoriam {
     text-align: center;
-    background-color: #f5f5f5; /* Light background to match the site */
+    background-color: #f5f5f5; 
     padding: 40px;
-    border-radius: 10px; /* Rounded edges for a softer look */
+    border-radius: 10px; 
     margin: 20px auto;
     width: 90%;
     max-width: 800px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 #memoriam h2 {
@@ -241,7 +269,6 @@ section {
     line-height: 1.6;
 }
 
-/* Weekly Program */
 #weekly-program {
     background: #002C70;
     color: white;
@@ -305,7 +332,6 @@ footer .footer-links a:hover {
     color: #D4AF37;
 }
 
-/* Ensure images are responsive but do not exceed a certain size */
 .media img {
     width: 100%; 
     max-width: 400px; 
@@ -376,3 +402,24 @@ footer .footer-links a:hover {
     }
 }
 
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0047AB;
+    color: #F5F5F5;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: none; 
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    background-color: #00307A;
+    transform: scale(1.1);
+}
