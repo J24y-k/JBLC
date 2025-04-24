@@ -71,7 +71,7 @@ nav a:hover {
     color: #F5F5F5;
     text-align: center;
     padding: 2rem 1rem;
-    height: 34rem;
+    height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,8 +94,8 @@ nav a:hover {
     font-size: 1rem;
     border: none;
     border-radius: 5px;
-    background-color: #F5F5F5;
-    color: #0047AB;
+    background-color: #3E5889;
+    color: #F5F5F5;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -110,23 +110,6 @@ nav a:hover {
     margin-top: 1.5rem;
     display: flex;
     justify-content: center;
-}
-
-.cta button {
-    margin: 0.5rem;
-    padding: 0.7rem 1.3rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #D4AF37;
-    color: #2E2E2E;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: 0.3s;
-}
-
-.cta button:hover {
-    background-color: #D1001F;
-    color: #F5F5F5;
 }
 
 .quick-links {
@@ -213,6 +196,16 @@ section {
 }
 
 /* event style trial*/ 
+
+#events h2 {
+    text-align: center;
+}
+
+#events{
+    background: linear-gradient(to right, #0047AB, #002C70);
+    color: #F5F5F5;
+}
+
 #events ul {
     list-style: none;
     padding: 0;
@@ -221,14 +214,16 @@ section {
     max-width: 700px;
 }
 
+
+
 #events li {
-    background: #0047AB;
     color: white;
     padding: 0.8rem 1rem;
     margin: 0.5rem 0;
     border-radius: 8px;
     font-weight: bold;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 #event-details {
@@ -238,7 +233,7 @@ section {
 }
 
 #event-details h2 {
-    color: #0047AB;
+    color: black;
     margin-bottom: 1rem;
 }
 
@@ -256,6 +251,7 @@ section {
     color: #0047AB;
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .event p {
@@ -276,11 +272,11 @@ section {
 .welcome-message {
     text-align: center;
     padding: 2rem 1rem;
-    background-color: #fff;
+    background: linear-gradient(to right, #0047AB, #002C70);;
 }
 
 .welcome-message h2 {
-    color: #0047AB;
+    color: #F5F5F5;
     margin-bottom: 1rem;
 }
 
@@ -288,7 +284,7 @@ section {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1rem;
-    color: #444;
+    color:#F5F5F5;
     line-height: 1.6;
 } 
 
