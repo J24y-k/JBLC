@@ -217,7 +217,7 @@ section {
 }
 
 #events{
-    background: linear-gradient(to right, #0047AB, #002C70);
+    background: #3E5889;
     color: #F5F5F5;
 }
 
@@ -263,7 +263,7 @@ section {
 }
 
 .event h3 {
-    color: #0047AB;
+    color: #3E5889;
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
     text-align: center;
@@ -287,7 +287,7 @@ section {
 .welcome-message {
     text-align: center;
     padding: 2rem 1rem;
-    background: linear-gradient(to right, #0047AB, #002C70);;
+    background:#3E5889 ;
 }
 
 .welcome-message h2 {
@@ -346,7 +346,7 @@ section {
 }
 
 #weekly-program {
-    background: #002C70;
+    background: #3E5889;
     color: white;
     text-align: center;
     padding: 2rem;
@@ -383,7 +383,7 @@ iframe {
 }
 
 .giving-heart, .giving-bank {
-    background: linear-gradient(to right, #0047AB, #002C70);
+    background: #3E5889 ;
     color: white;
 }
 
@@ -395,7 +395,7 @@ iframe {
 }
 
 .youth-page {
-    background: linear-gradient(to right, #0047AB, #002C70);
+    background: #3E5889;
     color: white;
 }
 
@@ -403,39 +403,51 @@ iframe {
     text-align: center;
 }
 
+.past-events h3 {
+    text-align: center;
+}
+
 /* Footer Fix */
 footer {
-    width: 100%;
+    background-color: #0047AB;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 2rem 1rem;
     position: relative;
     bottom: 0;
-    padding: 1rem;
-    text-align: center;
+    width: 100%;
 }
 
 .footer-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
+    margin-bottom: 1rem;
 }
 
-.footer a {
+.footer-links div {
+    min-width: 200px;
+}
+
+.footer-links h3 {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links p, .footer-links a {
+    font-size: 0.9rem;
+    color: #F5F5F5;
+    text-decoration: underline;
+}
+
+.footer-links a:hover {
     color: #D4AF37;
-    text-decoration: none;
-    transition: 0.3s;
+    text-decoration: underline;
 }
 
-.footer a:hover {
-    color: #D1001F;
-}
-
-footer .footer-links a {
-    color: white;
-    text-decoration: none; 
-}
-
-footer .footer-links a:hover {
-    text-decoration: underline; 
-    color: #D4AF37;
+footer p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
 }
 
 .media img {
@@ -502,27 +514,22 @@ footer .footer-links a:hover {
         height: 20%;
     }
 
-    .footer-links {
-        flex-direction: column;
-        gap: 10px;
-    }
 }
 
 .scroll-to-top {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
     background-color: #3E5889;
     color: #F5F5F5;
     padding: 10px 15px;
     border-radius: 50%;
-    font-size: 24px;
+    font-size: 1.2rem;
     text-align: center;
     text-decoration: none;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     display: none; 
-    transition: all 0.3s ease;
-    z-index: 1000;
+    transition: background 0.3s;
 }
 
 .scroll-to-top:hover {
