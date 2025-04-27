@@ -195,9 +195,24 @@ section {
     flex: 1;
 }
 
-/* event style trial*/ 
+.learn-more-button {
+    text-align: center;
+}
 
-#events h2 {
+.learn-more-button button {
+    padding: 10px 20px;
+    background-color: #0047AB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.learn-more-button button:hover{
+    background-color: #003580;
+}
+
+#events h2, #events h3 {
     text-align: center;
 }
 
@@ -297,7 +312,6 @@ section {
     border-radius: 10px; 
 }
 
-/* event style trial*/ 
 
 #memoriam {
     text-align: center;
@@ -358,6 +372,36 @@ iframe {
     border: none;
 }
 
+.sermons, .teachings {
+    background: #3E5889; 
+}
+
+.sermons h2, .sermons p, .teachings h2, .teachings p {
+    text-align: center ;
+    margin-bottom: 1rem ;
+    color: white;
+}
+
+.giving-heart, .giving-bank {
+    background: linear-gradient(to right, #0047AB, #002C70);
+    color: white;
+}
+
+.giving-heart h2, .giving-bank h2 {
+    text-align: center;
+    color: white;
+    background-color: #3E5889 ;
+
+}
+
+.youth-page {
+    background: linear-gradient(to right, #0047AB, #002C70);
+    color: white;
+}
+
+.youth-page h2 {
+    text-align: center;
+}
 
 /* Footer Fix */
 footer {
@@ -468,7 +512,7 @@ footer .footer-links a:hover {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #0047AB;
+    background-color: #3E5889;
     color: #F5F5F5;
     padding: 10px 15px;
     border-radius: 50%;
