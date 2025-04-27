@@ -511,7 +511,7 @@ footer p {
         font-size: 14px;
         text-align: center;
         flex-direction: column;
-        height: 20%;
+        height: auto;
     }
 
 }
