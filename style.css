@@ -403,8 +403,50 @@ iframe {
     text-align: center;
 }
 
-.past-events h3 {
+.coming-events {
+    padding: 2rem;
+    background-color: #f9f9f9;
     text-align: center;
+}
+
+.coming-events h3 {
+    font-size: 28px;
+    color: #0047AB;
+    margin-bottom: 1rem;
+}
+
+.coming-events ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem auto;
+    max-width: 600px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.coming-events ul li {
+    margin-bottom: 10px;
+    background-color: #eef2f8;
+    padding: 10px 15px;
+    border-left: 4px solid #0047AB;
+    border-radius: 5px;
+}
+
+.event-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.event-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Fix */
@@ -502,6 +544,16 @@ footer p {
     .pastor-info {
         max-width: 90%;
         margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .coming-events ul {
+        font-size: 14px;
+    }
+
+    .event-gallery {
+        grid-template-columns: 1fr;
     }
 }
 
