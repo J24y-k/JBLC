@@ -607,10 +607,20 @@ footer p {
 @media (max-width: 496px) {
     .announcement-bar {
         font-size: 0.85rem; /* smaller text */
-        padding: 0.65rem 0.5rem; /* reduce vertical space */
-        white-space: nowrap; /* keep it in a single line if possible */
-        overflow: hidden;     /* hide overflow if too long */
-        text-overflow: ellipsis; /* add "..." if text is too long */
+        padding: 0.6rem 0.5rem; /* reduce vertical space */
+        white-space: normal; /* keep it in a single line if possible */
+        overflow: visible;     /* hide overflow if too long */
+
+    }
+}
+
+@media (max-width: 405px) {
+    .announcement-bar {
+        font-size: 0.75rem; /* smaller text */
+        padding: 0.7rem 0.5rem; /* reduce vertical space */
+        white-space: normal; /* keep it in a single line if possible */
+        overflow: visible;     /* hide overflow if too long */
+
     }
 }
 
