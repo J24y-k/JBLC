@@ -94,7 +94,6 @@ nav a:hover {
     color: #D4AF37;
 }
 
-/* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
                 url('images/choir.jpg') no-repeat center center;
@@ -482,7 +481,7 @@ iframe {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer Fix */
+
 footer {
     background-color: #0047AB;
     color: #F5F5F5;
@@ -591,6 +590,10 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    header{
+        margin-top: 40px;
+    }
+
     footer {
         padding: 1rem;
         font-size: 14px;
