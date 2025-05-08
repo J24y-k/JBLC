@@ -606,20 +606,20 @@ footer p {
 
 @media (max-width: 496px) {
     .announcement-bar {
-        font-size: 0.85rem; /* smaller text */
-        padding: 0.6rem 0.5rem; /* reduce vertical space */
-        white-space: normal; /* keep it in a single line if possible */
-        overflow: visible;     /* hide overflow if too long */
+        font-size: 0.85rem; 
+        padding: 0.6rem 0.5rem; 
+        white-space: normal; 
+        overflow: visible;    
 
     }
 }
 
 @media (max-width: 405px) {
     .announcement-bar {
-        font-size: 0.75rem; /* smaller text */
-        padding: 0.7rem 0.5rem; /* reduce vertical space */
-        white-space: normal; /* keep it in a single line if possible */
-        overflow: visible;     /* hide overflow if too long */
+        font-size: 0.75rem; 
+        padding: 0.7rem 0.5rem; 
+        white-space: normal; 
+        overflow: visible;   
 
     }
 }
@@ -643,4 +643,103 @@ footer p {
 .scroll-to-top:hover {
     background-color: #00307A;
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .cta button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    .pastor-image img {
+        width: 120px;
+    }
+
+    .event p {
+        font-size: 0.95rem;
+    }
+
+    .pst-serge img {
+        max-width: 250px;
+    }
+
+    .coming-events h3 {
+        font-size: 1.5rem;
+    }
+
+    .coming-events ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: auto;
+        padding: 1.5rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.25rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .hero .cta {
+        flex-direction: column;
+    }
+
+    .hero .cta button {
+        margin: 0.5rem 0;
+        font-size: 0.85rem;
+    }
+
+    .event h3 {
+        font-size: 1.1rem;
+    }
+
+    .event p {
+        font-size: 0.9rem;
+    }
+
+    .media img, .past-events img, .pst-serge img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-links div {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .welcome-message p {
+        font-size: 0.95rem;
+    }
+
+    #yeartheme h2 {
+        font-size: 1.4rem;
+    }
+
+    #yeartheme p {
+        font-size: 1rem;
+    }
 }
