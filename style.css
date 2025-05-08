@@ -604,6 +604,16 @@ footer p {
 
 }
 
+@media (max-width: 496px) {
+    .announcement-bar {
+        font-size: 0.85rem; /* smaller text */
+        padding: 0.65rem 0.5rem; /* reduce vertical space */
+        white-space: nowrap; /* keep it in a single line if possible */
+        overflow: hidden;     /* hide overflow if too long */
+        text-overflow: ellipsis; /* add "..." if text is too long */
+    }
+}
+
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
