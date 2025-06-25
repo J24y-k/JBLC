@@ -1,47 +1,38 @@
-// Show the button after scrolling down 100px
-window.onscroll = function () {
-    let topButton = document.querySelector('.scroll-to-top');
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        topButton.style.display = "block";
-    } else {
-        topButton.style.display = "none";
-    }
+// ==============================
+// JBLC Homepage – script.js
+// ==============================
+
+// Animate on scroll
+const observerOptions = {
+  threshold: 0.2
 };
 
-document.addEventListener("DOMContentLoaded", function () {
-    const messages = document.querySelectorAll("#announcement-carousel span");
-    let current = 0;
-
-    // Countdown target
-    const eventDate = new Date("May 17, 2025 14:30:00").getTime();
-    const countdownSpan = document.getElementById("countdown");
-
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const distance = eventDate - now;
-
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      el.classList.add('animate');
+      observer.unobserve(el);
     }
+  });
+}, observerOptions);
 
-    function rotateMessages() {
-        messages.forEach((msg, index) => {
-            msg.classList.remove("active");
-        });
-
-        messages[current].classList.add("active");
-        current = (current + 1) % messages.length;
-    }
-
-    // Initial show
-    rotateMessages();
-    updateCountdown();
-
-    // Rotate every 5 seconds
-    setInterval(rotateMessages, 5000);
-
-    // Update countdown every second
-    setInterval(updateCountdown, 1000);
+const animatedElements = document.querySelectorAll('[data-animate]');
+animatedElements.forEach(el => {
+  observer.observe(el);
+  el.style.transitionDelay = `${[...animatedElements].indexOf(el) * 100}ms`;
 });
+
+// Parallax scroll effect (optional)
+window.addEventListener('scroll', () => {
+  const parallaxImgs = document.querySelectorAll('[data-parallax]');
+  parallaxImgs.forEach(img => {
+    const speed = parseFloat(img.getAttribute('data-parallax')) || 0.7;
+    img.style.transform = `translateY(${window.scrollY * speed}px)`;
+  });
+});
+
+// Optional Dark Mode Toggle (You can link this to a button later)
+const toggleDarkMode = () => {
+  document.body.classList.toggle('dark-theme');
+};

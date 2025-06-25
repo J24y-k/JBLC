@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JBLC Church</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
+    <script src="script.js" defer></script>
 </head>
-
 <body>
+    <!-- Announcement Bar -->
     <div class="announcement-bar">
-        <div class="carousel-text" id="announcement-carousel">
-           <span>Sunday Service from 09:30am to 12:45pm</span>
-            <span>Wednesday Teaching from 05:30pm to 07:30pm</span>
-            <span>Friday Fasting and Praying from 05:30pm to 07:30pm</span>
-        </div>
+    <div class="carousel-text" id="announcement-carousel">
+      <span>Sunday Service from 09:30am to 12:45pm</span>
+      <span>Wednesday Teaching from 05:30pm to 07:30pm</span>
+      <span>Friday Fasting and Praying from 05:30pm to 07:30pm</span>
     </div>
+  </div>
 
+    <!-- Header -->
     <header>
         <img src="images/logo.jpg" alt="Church Logo">
         <nav>
@@ -27,7 +27,8 @@
             <a href="youth.html">The Youth</a>
         </nav>
     </header>
-    
+
+    <!-- Hero Section -->
     <div class="hero">
         <h1>Welcome to Jesus The Bread Of Life</h1>
         <p>"I am the bread of life; whoever comes to me will never hunger, and whoever believes in me will never thirst" - John 6:35</p>
@@ -37,104 +38,121 @@
             <button onclick="location.href='giving.html'">Give an Offering</button>
         </div>
     </div>
-    
+
+<!-- Year Theme -->
     <section id="yeartheme">
-        <h2><i>2025 - The Year of Divine Wisdom for Maximum Impact</i></h2>
-        <p>Proverbs 4:6-7 "Do not turn your back on wisdom, for she will protect you..."</p>
+        <h2>2025 – Our Year of Divine Wisdom For Maximum Impact</h2>
+        <p>“Do not turn your back on wisdom, for she will protect you.Love her, and she will guard you...” - Proverbs 4:6-7</p>
     </section>
-    
+
+    <!-- Image Carousel Section -->
+    <section class="image-carousel">
+        <div class="carousel-wrapper">
+            <div class="carousel-track">
+                <img src="images/EL.JPG" alt="Event 1">
+                <img src="images/youth2.jpg" alt="Event 2">
+                <img src="images/PST.JPG" alt="Event 3">
+                <img src="images/PPL15.JPG" alt="Team">
+                <img src="images/WhatsApp Image 2025-04-27 at 16.40.45.jpeg" alt="WhatsApp Poster">
+                <img src="images/CLOV.JPG" alt="Outing">
+                <img src="images/YV.JPG" alt="Outing Youth">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
     <section id="about-us">
-        <h3>About Us</h3>
-        <p>
-            Welcome to Jesus The Bread of Life Church, a place where lives are transformed through faith, worship, 
-            and the power of the Holy Spirit. We are a community of believers who stand firm in the Word of God, 
-            committed to spreading the gospel and uplifting lives through prayer, deliverance, and restoration. 
-            At JBLC, we strive to create a space where everyone feels the love of Christ and experiences His divine presence.
-        </p>
-        <br><br>
-        
-        <h4>Our Vision</h4>
-        <p>
-            Deliverance and restoration of mankind by the preaching of the word of faith and the power of the Holy Spirit.
-        </p>
-        <br><br>
-    
+        <h3>Who We Are</h3>
+        <p>We are a faith-driven community centered on the teaching, love, and salvation of Jesus Christ.</p>
+
         <h4>Our Mission</h4>
-        <p>
-            We believe in Jesus Christ as our Lord and Savior and are dedicated to sharing His love, faith, and salvation 
-            with all nations.
-        </p>
-    
-        <div class="pastor-section">
-            <div class="pastor-image">
-                <img src="images/zkpro.jpg" alt="Pastor Gaspard Kazadi">
-            </div>
-            <div class="pastor-info">
-                <h3>Meet Our Pastor</h3>
-                <p>
-                    Pastor Gaspard Kazadi is the  leader of Jesus The Bread of Life Church. With a passion for 
-                    ministry and a heart for people, he has dedicated his life to preaching the gospel, leading with wisdom, 
-                    and inspiring lives through the power of faith. His teachings focus on deliverance, restoration, 
-                    and walking in divine purpose.
-                </p>
-            </div>
-        </div>
+        <p>To preach the gospel, reach the unreached, and nurture believers in their walk with Christ.</p>
     </section>
-    
-    <section id="events">
-        <h3>Upcoming Events</h3>
-        <ul>
-            <li>17 MAY 2025: YOU DESERVE CELEBRATION </li> 
-            <li>21 JUNE 2025: YOUTH CONFERENCE </li>
-            <li>29-31 AUGUST 2025: QAVAH 2nd EDITION </li>
-            <li>31 DECEMBER 2025: CROSSOVER 2025-2026 </li>
-        </ul>
-        <div class="learn-more-button">
-            <button onclick="location.href='events.html'">Learn More</button>
+
+    <!-- Pastor Section -->
+    <section class="pastor-section">
+        <div class="pastor-image">
+            <img src="images/zkpro.jpg" alt="Pastor Image">
         </div>
-    </section>
-    
-    <section id="weekly-program">
-        <h2>Weekly Program</h2>
-        <div class="weekly">
-            <div class="program-item"> WEDNESDAY: 05:30 PM - 07:30 PM | Teaching Service</div>
-            <div class="program-item"> FRIDAY: 05:30 PM - 07:45 PM | Fasting & Praying</div>
-            <div class="program-item"> SATURDAY: 04:00 PM - 07:00 PM | Choir Practice</div>
-            <div class="program-item"> SUNDAY: 09:30 AM - 12:45 PM | Sunday Worship</div>
+        <div class="pastor-info">
+            <h3>Pastor Gaspard Zadio Kazadi</h3>
+            <p>A shepherd of the flock and faithful servant of the Word, Pastor Gaspard leads JBLC with passion and vision under the guidance of the Holy Spirit.</p>
         </div>
     </section>
 
+   <div class="events-weekly-container">
+  <!-- Upcoming Events -->
+  <section id="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+          <li><strong>17 MAY 2025:</strong> He Deserves Celebration</li>
+          <li><strong>21 JUNE 2025:</strong> Youth Conference</li>
+          <li><strong>29-31 AUGUST 2025:</strong> Qavah 2nd Edition</li>
+          <li><strong>31 DECEMBER 2025:</strong> Crossover 2025-2026</li>
+      </ul>
+  </section>
+
+  <!-- Weekly Program -->
+  <section id="weekly-program">
+      <h2>This Week at JBLC</h2>
+      <div class="weekly">
+          <div class="program-item">Sunday Service – 09:00AM</div>
+          <div class="program-item">Wednesday Bible Study – 06:00PM</div>
+          <div class="program-item">Friday Prayer Night – 06:00PM</div>
+          <div class="program-item">Youth Meeting – Every Saturday 04:00PM</div>
+      </div>
+  </section>
+</div>
+
+    <!-- Memoriam -->
     <section id="memoriam">
-        <h2>In Memoriam of Pst Serge Mpiana</h2>
+        <h2>In Loving Memory</h2>
         <div class="pst-serge">
-            <img src="images/pst serge.jpg" alt="pst-serge">
+            <img src="images/pst serge.jpg" alt="Late Pastor Serge">
         </div>
-        <p>We will always remember the visionary of Jesus The Bread of Life Church, the late Pastor Serge Mpiana. We bless God for his lasting legacy.</p>
+        <p>We honor the memory of our beloved leader whose legacy continues to live on in our hearts and ministry.</p>
     </section>
-    
-    
-    <footer id="contact">
-        <div class="footer-links">
-            <div>
-                <h3>Find Us At</h3>
-                <p>90 Frere Road, Judith's Paarl, Johannesburg Bertrams</p>
-            </div>
-            <div>
-                <h3>Follow Us</h3>
-                <p>
-                    <a href="https://www.instagram.com/jblc_youth?igsh=MTR4b2txeHFoNGhkdA==" target="_blank">Instagram</a> |
-                    <a href="https://www.tiktok.com/@_j.bl_?_t=ZM-8ugk9jNB8gp&_r=1" target="_blank">TikTok</a> |
-                    <a href="https://www.youtube.com/channel/UCY0efEMOXf6Zxu87fWtIdmQ" target="_blank">YouTube</a>
-                </p>
-            </div>
-            <div>
-                <h3>Contact Us</h3>
-                <p><a href="mailto:jesusthebread77@gmail.com">Email</a> | <a href="https://wa.me/27676047348" target="_blank">WhatsApp</a> </p>
+
+     <section class="image-carousel">
+        <div class="carousel-wrapper">
+            <div class="carousel-track">
+                <img src="images/ZKC.JPG" alt="Event 1">
+                <img src="images/US.JPG" alt="Event 2">
+                <img src="images/PROPHET.JPG" alt="Event 3">
+                <img src="images/KIDS2.JPG" alt="Team">
+                <img src="images/OLI.JPG" alt="WhatsApp Poster">
+                <img src="images/FAM.JPG" alt="Outing">
+                <img src="images/M.S.JPG" alt="Outing Youth">
+                <img src="images/ALP.JPG" alt="ppl">
             </div>
         </div>
-        <p>&copy; 2025 Jesus The Bread Of Life Church. All Rights Reserved.</p>
-    </footer>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+    <div class="footer-links">
+      <div>
+        <h3>Connect</h3>
+        <p>Email: jesusthebread77@gmail.com</p>
+        <p>Phone: +27 123 456 789</p>
+      </div>
+      <div>
+        <h3>Location</h3>
+        <p>90 Frere Road, Judith's Paarl<br>Johannesburg, South Africa</p>
+      </div>
+      <div>
+        <h3>Socials</h3>
+        <p>
+           <a href="https://www.instagram.com/jblc_youth?igsh=MTR4b2txeHFoNGhkdA==" target="_blank">Instagram</a> |
+          <a href="https://www.tiktok.com/@j.bl?_t=ZM-8ugk9jNB8gp&_r=1" target="_blank">TikTok</a> |
+          <a href="https://www.youtube.com/channel/UCY0efEMOXf6Zxu87fWtIdmQ" target="_blank">YouTube</a> |
+          <a href="https://wa.me/27676047348" target="_blank">WhatsApp</a>
+        </p>
+      </div>
+    </div>
+    <p>&copy; 2025 Jesus the Bread of Life Church. All Rights Reserved.</p>
+  </footer>
+  <!-- Scroll to Top -->
     <a href="#" class="scroll-to-top" title="Back to top">&#8679;</a>
 </body>
 </html>
