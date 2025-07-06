@@ -1024,10 +1024,5 @@ footer p {
     border-radius: 8px;
     object-fit: cover;
   }
-
-  /* disable auto animation on mobile to prevent flickering */
-  .carousel-track {
-    animation: none !important;
-  }
 }
 /* --- END: IMAGE CAROUSEL MOBILE FIX --- */
