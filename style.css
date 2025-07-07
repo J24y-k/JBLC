@@ -902,10 +902,6 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  .carousel-track,
-  .carousel-strip {
-    animation: none;
-  }
   .carousel-track img,
   .carousel-strip img {
     width: 100%;
