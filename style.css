@@ -1022,3 +1022,171 @@ footer p {
   }
 }
 /* --- END: IMAGE CAROUSEL MOBILE FIX --- */
+/* this is an extra style for the events on both index page and event page particularly for the events which already took place and the ones yet to come */
+
+/* ======================== */
+/* PAST & UPCOMING EVENT STYLES */
+/* ======================== */
+
+/* Past Events Section */
+#past-events {
+  background-color: #181818;
+  padding: 2rem;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 280px;
+  opacity: 0.85;
+}
+
+#past-events h2 {
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+#past-events ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.past-event {
+  padding: 0.6rem;
+  background: #222;
+  border-left: 4px solid #666;
+  margin-bottom: 0.6rem;
+  border-radius: 5px;
+  position: relative;
+  opacity: 0.7;
+  filter: grayscale(60%);
+  transition: all 0.3s ease;
+}
+
+.past-event:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: translateX(5px);
+}
+
+.upcoming-event {
+  padding: 0.6rem;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  border-left: 4px solid #D4AF37;
+  margin-bottom: 0.6rem;
+  border-radius: 5px;
+  position: relative;
+  animation: pulse-glow 2s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
+  }
+}
+
+/* Event Badges */
+.event-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.event-badge.completed {
+  background-color: #555;
+  color: #aaa;
+}
+
+.event-badge.upcoming {
+  background-color: #D4AF37;
+  color: #111;
+  animation: badge-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes badge-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Event Cards - Past vs Upcoming */
+.past-event-card {
+  opacity: 0.6;
+  filter: grayscale(50%);
+  border-left: 4px solid #666 !important;
+  position: relative;
+}
+
+.past-event-card:hover {
+  opacity: 0.9;
+  filter: grayscale(20%);
+}
+
+.upcoming-event-card {
+  border: 2px solid #D4AF37;
+  background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+  position: relative;
+  animation: card-glow 3s ease-in-out infinite;
+}
+
+@keyframes card-glow {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 20px rgba(212, 175, 55, 0.2);
+  }
+  50% {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5), 0 0 40px rgba(212, 175, 55, 0.4);
+  }
+}
+
+/* Event Status Labels */
+.event-status {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.event-status.past {
+  background-color: #555;
+  color: #999;
+}
+
+.event-status.upcoming {
+  background: linear-gradient(135deg, #D4AF37 0%, #ffae42 100%);
+  color: #111;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+  animation: status-pulse 2s ease-in-out infinite;
+}
+
+@keyframes status-pulse {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+/* Adjust past event card headings */
+.past-event-card h3 {
+  color: #888 !important;
+}
+
+.past-event-card p {
+  color: #999 !important;
+}
