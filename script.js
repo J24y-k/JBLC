@@ -36,3 +36,32 @@ window.addEventListener('scroll', () => {
 const toggleDarkMode = () => {
   document.body.classList.toggle('dark-theme');
 };
+
+// Smooth scroll for CTA buttons
+
+        document.querySelectorAll('.cta button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                if (this.getAttribute('onclick').includes('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('onclick').match(/#[\w-]+/)[0]);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+
+        // Header shadow on scroll
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.style.boxShadow = '0 6px 25px rgba(0, 0, 0, 0.8)';
+            } else {
+                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.6)';
+            }
+            
+            lastScroll = currentScroll;
+        });
